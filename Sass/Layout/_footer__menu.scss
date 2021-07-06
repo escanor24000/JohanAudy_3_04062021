@@ -1,0 +1,46 @@
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+
+    .footer--info{
+        padding-left: 6%;
+        margin-bottom: 5%;
+    }
+
+    i{
+        margin-right: 3%;
+        font-size: 14px;
+        padding-top: 3px;
+    }
+
+    li{
+        list-style: none;
+        margin-bottom: 2%;
+        align-items: center;
+    }
+
+    .info--propo{
+        display: flex;
+        flex-direction: row;
+
+        i{
+            margin-right: 4%;
+        }
+    }
+
+    .info--dev{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.footer--logo{
+    filter: invert(1);
+    width: 25%;
+    margin-left: 6%;
+    margin-top: 7%;
+    margin-bottom: 2%;
+}

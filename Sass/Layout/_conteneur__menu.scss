@@ -1,0 +1,41 @@
+
+.menu__entree{
+    display: flex;
+    flex-direction: column;
+    .menu--titre{
+        font-weight: inherit;
+        font-size: 17px;
+        margin-left: 3%;
+        border-bottom: 3px solid #99E2D0;
+        width: 9%;
+        height: 14%;
+        margin-bottom: 3%;
+    }
+}
+.menu__plat{
+    display: flex;
+    flex-direction: column;
+    .menu--titre{
+        font-weight: inherit;
+        font-size: 17px;
+        margin-left: 3%;
+        border-bottom: 3px solid #99E2D0;
+        width: 9%;
+        height: 14%;
+        margin-bottom: 3%;
+    }
+}
+.menu__dessert{
+    display: flex;
+    flex-direction: column;
+    .menu--titre{
+        font-weight: inherit;
+        font-size: 17px;
+        margin-left: 3%;
+        border-bottom: 3px solid #99E2D0;
+        width: 9%;
+        height: 14%;
+        margin-bottom: 3%;
+    }
+}
+               
