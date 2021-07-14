@@ -141,7 +141,6 @@ footer .info--dev {
 .menu input {
   border-radius: 2em;
   padding: 3%;
-  background-color: #9356DC;
   color: white;
   text-align: center;
   border: none;
@@ -150,7 +149,8 @@ footer .info--dev {
   margin-right: 25%;
   box-shadow: 0px 4px 8px -4px grey;
   font-size: 16px;
-  filter: saturate(2.7);
+  filter: saturate(3.5);
+  background: linear-gradient(160deg, #FF79DA, 1%, #6023a9);
 }
 
 .menu__box {

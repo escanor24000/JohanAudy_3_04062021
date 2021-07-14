@@ -58,7 +58,6 @@ img{
     input{
         border-radius: 2em;
         padding: 3%;
-        background-color: $couleur-primaire;
         color: white;
         text-align: center;
         border: none;
@@ -66,7 +65,8 @@ img{
         margin-top: 7%;
         box-shadow: 0px 4px 8px -4px grey;
         font-size: 16px;
-        filter: saturate(2.7);
+        filter: saturate(3.5);
+        @include color-bouton($couleur-primaire);
     }  
 }
 

@@ -1,0 +1,6 @@
+@mixin color-bouton($colour: $couleur-primaire) {
+    @if (lightness($colour) < 70% ) {
+        $colour: darken($colour, 20%);
+    }
+    background: linear-gradient(160deg, #FF79DA, 1%, $colour);
+}
