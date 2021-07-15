@@ -22,6 +22,11 @@ li {
   width: 6%;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 img {
   object-fit: contain;
   max-width: 100%;
@@ -73,7 +78,6 @@ img {
 .header--reserv input {
   border-radius: 2em;
   padding: 3%;
-  background-color: #9356DC;
   color: white;
   text-align: center;
   border: none;
@@ -81,7 +85,8 @@ img {
   margin-top: 7%;
   box-shadow: 0px 4px 8px -4px grey;
   font-size: 16px;
-  filter: saturate(2.7);
+  filter: saturate(3.5);
+  background: linear-gradient(160deg, #FF79DA, 1%, #6023a9);
 }
 
 .food__nav {
@@ -97,7 +102,6 @@ img {
 .nav--box {
   display: flex;
   flex-direction: row;
-  border: 1px solid black;
   margin-bottom: 4%;
   border-radius: 1em;
   width: 87%;
