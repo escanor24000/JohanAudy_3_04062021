@@ -18,14 +18,25 @@ li{
 .fas.fa-ellipsis-v{
     font-size: 16px;
     margin-right: -4px;
+    @media screen and (min-width: 1001px){
+        font-size: 20px;
+        margin-right: -13px;
+    }
 }
 
 .fas.fa-mobile-alt{
     font-size: 20px;
     width: 6%;
+    @media screen and (min-width: 481px) and (max-width: 768px){
+        width: 4%;
+    }
     @media screen and (min-width: 769px) and (max-width: 1000px){
         font-size: 23px;
-        width: 4%;
+        width: 3%;
+    }
+    @media screen and (min-width: 1001px){
+        width: 2%;
+        font-size: 24px;
     }
 }
 

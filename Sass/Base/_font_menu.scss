@@ -6,16 +6,29 @@ h2{
     font-family: 'Shrikhand', sans-serif;
     margin-left: 5%;
     font-size: 30px;
+    @media screen and (min-width: 769px) and (max-width: 1000px){
+        font-size: 39px;
+    }
 }
 
 .fas.fa-arrow-left{
     font-size: 19px;
     margin-left: 6%;
+    @media screen and (min-width: 769px) and (max-width: 1000px){
+        font-size: 20px;
+    }
 }
 
 .far.fa-heart{
     margin-left: 25%;
     font-size: 27px;
+    @media screen and (min-width: 481px) and (max-width: 768px){
+        margin-left: 46%;
+    }
+    @media screen and (min-width: 769px) and (max-width: 1000px){
+        margin-left: 48%;
+        font-size: 28px;
+    }
 }
 
 .menu--nom--accom{
