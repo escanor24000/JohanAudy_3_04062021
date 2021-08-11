@@ -1,5 +1,6 @@
 p, li {
   font-family: "Roboto", sans-serif;
+  margin: 0%;
 }
 
 h2 {
@@ -27,8 +28,8 @@ h2 {
 }
 
 .fas.fa-arrow-left {
-  font-size: 19px;
-  margin-left: 6%;
+  font-size: 17px;
+  margin-left: 2em;
 }
 @media screen and (min-width: 769px) and (max-width: 1000px) {
   .fas.fa-arrow-left {
@@ -120,7 +121,6 @@ footer i {
 footer li {
   list-style: none;
   margin-bottom: 2%;
-  align-items: center;
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
   footer li {
@@ -132,6 +132,11 @@ footer li {
   footer li {
     margin-bottom: 1%;
     font-size: 23px;
+  }
+}
+@media screen and (min-width: 1001px) {
+  footer li {
+    margin-bottom: 1%;
   }
 }
 footer li a {
@@ -151,13 +156,12 @@ footer .info--propo {
   footer .info--propo {
     align-items: baseline;
     font-size: 23px;
-    margin-bottom: -4%;
   }
 }
 @media screen and (min-width: 1001px) {
   footer .info--propo {
     align-items: baseline;
-    margin-bottom: 0%;
+    margin-bottom: 1%;
   }
 }
 footer .info--propo i {
@@ -198,13 +202,13 @@ footer .info--dev {
 }
 @media screen and (min-width: 1001px) {
   footer .info--dev {
-    margin-bottom: 0%;
+    margin-bottom: 1%;
   }
 }
 
 .footer--logo {
   filter: invert(1);
-  width: 25%;
+  width: 22%;
   margin-left: 6%;
   margin-top: 7%;
   margin-bottom: 2%;
@@ -342,7 +346,7 @@ footer .info--dev {
 }
 .header--fleche--logo .header--logo {
   width: 38%;
-  margin-left: 21%;
+  margin-left: 19%;
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .header--fleche--logo .header--logo {
@@ -368,22 +372,6 @@ footer .info--dev {
   background-color: #F5F5F5;
   position: relative;
   margin-top: -64px;
-  height: 73em;
-}
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .menu {
-    height: 0%;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1000px) {
-  .menu {
-    height: 0%;
-  }
-}
-@media screen and (min-width: 1001px) {
-  .menu {
-    height: 0%;
-  }
 }
 .menu .menu__resto--itm {
   display: flex;
@@ -398,10 +386,14 @@ footer .info--dev {
   margin-left: 22%;
   margin-top: 8%;
   margin-right: 25%;
-  box-shadow: 0px 4px 8px -4px grey;
+  margin-bottom: 22%;
+  /*box-shadow: 0px 4px 8px -4px grey;*/
+  box-shadow: 0px 6px 8px #918f8f;
+  text-shadow: 1px 1px 10px #918f8f;
   font-size: 16px;
   filter: saturate(3.5);
-  background: linear-gradient(160deg, #FF79DA, 1%, #6023a9);
+  background: linear-gradient(360deg, #FF79DA, #9356DC);
+  /*@include color-bouton($couleur-primaire);*/
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .menu input {
