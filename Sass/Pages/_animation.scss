@@ -1,0 +1,21 @@
+$num-pla: 10;
+$anim-dur: 2s;
+$anim-delay: $anim-dur/$num-pla;
+
+.menu__box{
+    animation: menu $anim-dur backwards;
+    @for $i from 1 through $num-pla{
+        &--#{$i} {
+            animation-delay: $anim-delay * $i;
+        }
+    }
+}
+
+@keyframes menu{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
