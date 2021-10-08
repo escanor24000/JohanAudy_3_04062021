@@ -1,6 +1,7 @@
 @import "./Utils/variables";
 @import "./Base/font";
 @import "./Utils/mixins";
+@import "./Pages/animation";
 
 img{
     object-fit: contain;
@@ -387,6 +388,7 @@ body{
 
     .resto--logo{
         font-size: 24px;
+        margin-bottom: 6%;
         @media screen and (min-width: 769px) and (max-width: 1000px){
             font-size: 27px;
         }

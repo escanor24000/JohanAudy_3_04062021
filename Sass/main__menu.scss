@@ -5,6 +5,12 @@
 @import './Layout/conteneur__menu';
 @import './Pages/animation';
 
+body{
+    margin-left: 0px;
+    margin-right: 0px;
+    overflow-x: hidden;
+    margin-bottom: 0px;
+}
 .resto--img{
     max-width: 100%;
     object-fit: cover;
@@ -74,6 +80,7 @@
 
 .menu__box{
     display: flex;
+    overflow: hidden;
     background-color: #ffff;
     margin-bottom: 3%;
     margin-left: 3%;
@@ -84,11 +91,14 @@
 
     .menu--nom--accom{
         margin-left: 2%;
-        width: 89%;
+        width: 80%;
         .accom{
             margin-bottom: 3%;
             margin-top: 0%;
             font-size: 14px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
             @media screen and (min-width: 481px) and (max-width: 768px){
                 font-size: 17px;
             }
@@ -103,6 +113,9 @@
             margin-bottom: 1%;
             margin-top: 3%;
             font-size: 17px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
             @media screen and (min-width: 481px) and (max-width: 768px){
                 font-size: 20px;
             }
@@ -115,9 +128,12 @@
         }
     }
     .menu--prix{
-        margin-top: 5%;
+        margin-top: 8%;
         font-weight: bolder;
         font-size: 13px;
+        margin-right: 3%;
+        width: 5%;
+        text-align: end;
         @media screen and (min-width: 481px) and (max-width: 768px){
             font-size: 17px;
         }
@@ -126,6 +142,21 @@
         }
         @media screen and (min-width: 1001px){
             font-size: 22px;
+        }
+    }
+    .box__anim__logo__menu
+    {
+        display: flex;
+        border-radius: 0 1em 1em 0;
+        align-items: center;
+        width: 15%;
+        background-color: aquamarine;
+        .logo--valide{
+            color: aquamarine;
+            background-color: white;
+            border-radius: 1em;
+            font-size: 19px;
+            margin-left: 33%;
         }
     }
 }

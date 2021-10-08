@@ -1,4 +1,4 @@
-p, li {
+p, li, .nom, .accom, .menu--prix {
   font-family: "Roboto", sans-serif;
   margin: 0%;
 }
@@ -387,6 +387,90 @@ footer .info--dev {
     opacity: 1;
   }
 }
+.anime__charge {
+  position: absolute;
+  top: 39%;
+  left: 9%;
+  opacity: 0;
+  animation-name: anime-logo;
+  animation-duration: 3s;
+}
+
+@keyframes anime-logo {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.bloc_page {
+  animation-name: anime-page;
+  animation-duration: 3s;
+}
+
+@keyframes anime-page {
+  0% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.like__empty_heart {
+  font-size: 25px;
+  background-color: transparent;
+  z-index: 2;
+  position: absolute;
+  transition-duration: 650ms;
+}
+.like__empty_heart:hover {
+  color: transparent;
+}
+.like__empty_heart:hover + .like__full_heart {
+  transform: scale(1);
+}
+.like__full_heart {
+  background: -moz-linear-gradient(360deg, #9356DC, #FF79DA);
+  background: -webkit-linear-gradient(360deg, #9356DC, #FF79DA);
+  background: linear-gradient(360deg, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 25px;
+  transform: scale(0);
+  transition: transform 500ms;
+  position: absolute;
+  z-index: 1;
+}
+
+.menu__box:hover + .menu--prix {
+  transform: translateX(0px);
+}
+
+.menu--prix {
+  transform: translateX(53px);
+  transition: transform 4000ms;
+}
+
+.box__anim__logo__menu {
+  transform: translateX(67px);
+}
+
+body {
+  margin-left: 0px;
+  margin-right: 0px;
+  overflow-x: hidden;
+  margin-bottom: 0px;
+}
+
 .resto--img {
   max-width: 100%;
   object-fit: cover;
@@ -468,6 +552,7 @@ footer .info--dev {
 
 .menu__box {
   display: flex;
+  overflow: hidden;
   background-color: #ffff;
   margin-bottom: 3%;
   margin-left: 3%;
@@ -478,12 +563,15 @@ footer .info--dev {
 }
 .menu__box .menu--nom--accom {
   margin-left: 2%;
-  width: 89%;
+  width: 80%;
 }
 .menu__box .menu--nom--accom .accom {
   margin-bottom: 3%;
   margin-top: 0%;
   font-size: 14px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .menu__box .menu--nom--accom .accom {
@@ -504,6 +592,9 @@ footer .info--dev {
   margin-bottom: 1%;
   margin-top: 3%;
   font-size: 17px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .menu__box .menu--nom--accom .nom {
@@ -521,9 +612,12 @@ footer .info--dev {
   }
 }
 .menu__box .menu--prix {
-  margin-top: 5%;
+  margin-top: 8%;
   font-weight: bolder;
   font-size: 13px;
+  margin-right: 3%;
+  width: 5%;
+  text-align: end;
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .menu__box .menu--prix {
@@ -539,6 +633,20 @@ footer .info--dev {
   .menu__box .menu--prix {
     font-size: 22px;
   }
+}
+.menu__box .box__anim__logo__menu {
+  display: flex;
+  border-radius: 0 1em 1em 0;
+  align-items: center;
+  width: 15%;
+  background-color: aquamarine;
+}
+.menu__box .box__anim__logo__menu .logo--valide {
+  color: aquamarine;
+  background-color: white;
+  border-radius: 1em;
+  font-size: 19px;
+  margin-left: 33%;
 }
 
 /*# sourceMappingURL=style.css.map */

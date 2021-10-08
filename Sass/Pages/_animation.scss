@@ -1,3 +1,5 @@
+@import "../Utils/variables";
+
 $num-pla: 10;
 $anim-dur: 2s;
 $anim-delay: $anim-dur/$num-pla;
@@ -18,4 +20,86 @@ $anim-delay: $anim-dur/$num-pla;
     to{
         opacity: 1;
     }
+}
+
+.anime__charge{
+    position: absolute;
+    top: 39%;
+    left: 9%;
+    opacity: 0;
+    animation-name: anime-logo;
+    animation-duration: 3s;
+}
+
+@keyframes anime-logo{
+    0%{
+        opacity: 1;
+    }
+    99%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.bloc_page{
+    animation-name: anime-page;
+    animation-duration: 3s;
+}
+
+@keyframes anime-page {
+    0%{
+        opacity: 0;
+    }
+    99%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.like{
+    &__empty_heart{
+        font-size: 25px;
+        background-color: transparent;
+        z-index: 2;
+        position: absolute;
+        transition-duration: 650ms;
+        &:hover{
+            color: transparent;
+        }
+        &:hover + .like__full_heart{
+            transform: scale(1);
+        }
+    }
+    &__full_heart{
+        background: -moz-linear-gradient(360deg, $couleur-primaire, $couleur-secondaire);
+        background: -webkit-linear-gradient(360deg, $couleur-primaire, $couleur-secondaire);
+        background: linear-gradient(360deg, $couleur-primaire, $couleur-secondaire);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 25px;
+        transform: scale(0);
+        transition: transform 500ms;
+        position: absolute;
+        z-index: 1;
+        
+    }
+}
+
+.menu__box{
+    &:hover + .menu--prix{
+        transform: translateX(0px);
+    }
+}
+.menu--prix{
+    transform: translateX(53px);
+    transition: transform 4000ms;
+}
+.box__anim__logo__menu{
+    transform: translateX(67px);
 }

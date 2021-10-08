@@ -55,6 +55,120 @@ a {
   color: black;
 }
 
+.fas.fa-heart {
+  color: #E71C1C;
+}
+
+.far.fa-heart {
+  position: absolute;
+}
+
+.menu__box {
+  animation: menu 2s backwards;
+}
+.menu__box--1 {
+  animation-delay: 0.2s;
+}
+.menu__box--2 {
+  animation-delay: 0.4s;
+}
+.menu__box--3 {
+  animation-delay: 0.6s;
+}
+.menu__box--4 {
+  animation-delay: 0.8s;
+}
+.menu__box--5 {
+  animation-delay: 1s;
+}
+.menu__box--6 {
+  animation-delay: 1.2s;
+}
+.menu__box--7 {
+  animation-delay: 1.4s;
+}
+.menu__box--8 {
+  animation-delay: 1.6s;
+}
+.menu__box--9 {
+  animation-delay: 1.8s;
+}
+.menu__box--10 {
+  animation-delay: 2s;
+}
+
+@keyframes menu {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.anime__charge {
+  position: absolute;
+  top: 39%;
+  left: 9%;
+  opacity: 0;
+  animation-name: anime-logo;
+  animation-duration: 3s;
+}
+
+@keyframes anime-logo {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.bloc_page {
+  animation-name: anime-page;
+  animation-duration: 3s;
+}
+
+@keyframes anime-page {
+  0% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.like__empty_heart {
+  font-size: 25px;
+  background-color: transparent;
+  z-index: 2;
+  position: absolute;
+  transition-duration: 650ms;
+}
+.like__empty_heart:hover {
+  color: transparent;
+}
+.like__empty_heart:hover + .like__full_heart {
+  transform: scale(1);
+}
+.like__full_heart {
+  background: -moz-linear-gradient(360deg, #9356DC, #FF79DA);
+  background: -webkit-linear-gradient(360deg, #9356DC, #FF79DA);
+  background: linear-gradient(360deg, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 25px;
+  transform: scale(0);
+  transition: transform 500ms;
+  position: absolute;
+  z-index: 1;
+}
+
 img {
   object-fit: contain;
   max-width: 100%;
