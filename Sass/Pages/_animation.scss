@@ -92,14 +92,20 @@ $anim-delay: $anim-dur/$num-pla;
 }
 
 .menu__box{
-    &:hover + .menu--prix{
-        transform: translateX(0px);
+    &:hover{
+        &>.menu--nom--accom{
+            width: 54%;
+        }
+        &>.menu--prix{
+            transform: translateX(98px);
+        }
+        &>.box__anim{
+            transform: translateX(95px);
+            &>.box__anim__logo--valide{
+                transform: rotate(360deg);
+            }
+        }
     }
+    
 }
-.menu--prix{
-    transform: translateX(53px);
-    transition: transform 4000ms;
-}
-.box__anim__logo__menu{
-    transform: translateX(67px);
-}
+

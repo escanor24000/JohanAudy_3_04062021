@@ -451,17 +451,17 @@ footer .info--dev {
   z-index: 1;
 }
 
-.menu__box:hover + .menu--prix {
-  transform: translateX(0px);
+.menu__box:hover > .menu--nom--accom {
+  width: 54%;
 }
-
-.menu--prix {
-  transform: translateX(53px);
-  transition: transform 4000ms;
+.menu__box:hover > .menu--prix {
+  transform: translateX(98px);
 }
-
-.box__anim__logo__menu {
-  transform: translateX(67px);
+.menu__box:hover > .box__anim {
+  transform: translateX(95px);
+}
+.menu__box:hover > .box__anim > .box__anim__logo--valide {
+  transform: rotate(360deg);
 }
 
 body {
@@ -563,11 +563,11 @@ body {
 }
 .menu__box .menu--nom--accom {
   margin-left: 2%;
-  width: 80%;
+  width: 62%;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 .menu__box .menu--nom--accom .accom {
-  margin-bottom: 3%;
-  margin-top: 0%;
   font-size: 14px;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -589,8 +589,6 @@ body {
   }
 }
 .menu__box .menu--nom--accom .nom {
-  margin-bottom: 1%;
-  margin-top: 3%;
   font-size: 17px;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -612,12 +610,16 @@ body {
   }
 }
 .menu__box .menu--prix {
-  margin-top: 8%;
+  display: flex;
+  align-items: end;
+  padding-bottom: 2%;
   font-weight: bolder;
   font-size: 13px;
   margin-right: 3%;
   width: 5%;
   text-align: end;
+  transform: translateX(119px);
+  transition: transform 400ms linear;
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .menu__box .menu--prix {
@@ -634,19 +636,23 @@ body {
     font-size: 22px;
   }
 }
-.menu__box .box__anim__logo__menu {
+.menu__box .box__anim {
   display: flex;
   border-radius: 0 1em 1em 0;
   align-items: center;
   width: 15%;
   background-color: aquamarine;
+  transition: transform 400ms linear;
+  transform: translateX(130px);
 }
-.menu__box .box__anim__logo__menu .logo--valide {
+.menu__box .box__anim__logo--valide {
   color: aquamarine;
   background-color: white;
   border-radius: 1em;
   font-size: 19px;
   margin-left: 33%;
+  transition: transform 400ms ease-in-out;
+  transform: rotate(0deg);
 }
 
 /*# sourceMappingURL=style.css.map */
