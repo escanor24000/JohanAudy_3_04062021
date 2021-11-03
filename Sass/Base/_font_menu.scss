@@ -1,9 +1,10 @@
-p,li,.nom,.accom,.menu--prix{
+p,li,.nom,.accom,.menu--prix,.menu--titre--texte{
    font-family: 'Roboto', sans-serif;
    margin: 0%;
+   font-weight: inherit;
 }
 
-h2{
+.menu__resto--titre{
     font-family: 'Shrikhand', 'cursive', sans-serif;
     margin-left: 5%;
     font-size: 30px;

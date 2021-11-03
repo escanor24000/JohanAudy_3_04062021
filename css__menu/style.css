@@ -1,27 +1,28 @@
-p, li, .nom, .accom, .menu--prix {
+p, li, .nom, .accom, .menu--prix, .menu--titre--texte {
   font-family: "Roboto", sans-serif;
   margin: 0%;
+  font-weight: inherit;
 }
 
-h2 {
+.menu__resto--titre {
   font-family: "Shrikhand", "cursive", sans-serif;
   margin-left: 5%;
   font-size: 30px;
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  h2 {
+  .menu__resto--titre {
     width: 65%;
     font-size: 31px;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1000px) {
-  h2 {
+  .menu__resto--titre {
     font-size: 45px;
     width: 60%;
   }
 }
 @media screen and (min-width: 1001px) {
-  h2 {
+  .menu__resto--titre {
     font-size: 45px;
     width: 60%;
   }
@@ -244,105 +245,54 @@ footer .info--dev {
   display: flex;
   flex-direction: column;
 }
-.menu__entree .menu--titre {
+.menu__entree .menu--titre--texte {
+  margin-left: 5%;
+  font-size: 3.4vw;
+  margin-top: 3%;
+}
+.menu__entree .barre--titre {
+  display: flex;
   font-weight: inherit;
-  font-size: 17px;
-  margin-left: 3%;
   border-bottom: 3px solid #99E2D0;
-  width: 5%;
-  height: 14%;
+  width: 8.7vw;
   margin-bottom: 3%;
-}
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .menu__entree .menu--titre {
-    font-size: 20px;
-    width: 52px;
-    height: 48px;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1000px) {
-  .menu__entree .menu--titre {
-    font-size: 23px;
-    width: 52px;
-    height: 53px;
-  }
-}
-@media screen and (min-width: 1001px) {
-  .menu__entree .menu--titre {
-    font-size: 24px;
-    width: 52px;
-    height: 56px;
-  }
+  margin-top: 1%;
 }
 
 .menu__plat {
   display: flex;
   flex-direction: column;
 }
-.menu__plat .menu--titre {
+.menu__plat .menu--titre--texte {
+  margin-left: 5%;
+  font-size: 3.4vw;
+  margin-top: 3%;
+}
+.menu__plat .barre--titre {
+  display: flex;
   font-weight: inherit;
-  font-size: 17px;
-  margin-left: 3%;
   border-bottom: 3px solid #99E2D0;
-  width: 5%;
-  height: 14%;
+  width: 8.7vw;
   margin-bottom: 3%;
-}
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .menu__plat .menu--titre {
-    font-size: 20px;
-    width: 52px;
-    height: 48px;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1000px) {
-  .menu__plat .menu--titre {
-    font-size: 23px;
-    width: 42px;
-    height: 53px;
-  }
-}
-@media screen and (min-width: 1001px) {
-  .menu__plat .menu--titre {
-    font-size: 24px;
-    width: 42px;
-    height: 56px;
-  }
+  margin-top: 1%;
 }
 
 .menu__dessert {
   display: flex;
   flex-direction: column;
 }
-.menu__dessert .menu--titre {
+.menu__dessert .menu--titre--texte {
+  margin-left: 5%;
+  font-size: 3.4vw;
+  margin-top: 3%;
+}
+.menu__dessert .barre--titre {
+  display: flex;
   font-weight: inherit;
-  font-size: 17px;
-  margin-left: 3%;
   border-bottom: 3px solid #99E2D0;
-  width: 5%;
-  height: 14%;
+  width: 8.7vw;
   margin-bottom: 3%;
-}
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .menu__dessert .menu--titre {
-    font-size: 20px;
-    width: 52px;
-    height: 48px;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1000px) {
-  .menu__dessert .menu--titre {
-    font-size: 23px;
-    width: 52px;
-    height: 53px;
-  }
-}
-@media screen and (min-width: 1001px) {
-  .menu__dessert .menu--titre {
-    font-size: 24px;
-    width: 52px;
-    height: 56px;
-  }
+  margin-top: 1%;
 }
 
 .menu__box {
@@ -454,11 +404,46 @@ footer .info--dev {
 .menu__box:hover > .menu--nom--accom {
   width: 54%;
 }
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .menu__box:hover > .menu--nom--accom {
+    width: 63%;
+  }
+}
 .menu__box:hover > .menu--prix {
-  transform: translateX(98px);
+  transform: translateX(96px);
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .menu__box:hover > .menu--prix {
+    transform: translateX(250%);
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1000px) {
+  .menu__box:hover > .menu--prix {
+    transform: translateX(466%);
+  }
+}
+@media screen and (min-width: 1001px) {
+  .menu__box:hover > .menu--prix {
+    transform: translateX(472%);
+  }
 }
 .menu__box:hover > .box__anim {
   transform: translateX(95px);
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .menu__box:hover > .box__anim {
+    transform: translateX(81%);
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1000px) {
+  .menu__box:hover > .box__anim {
+    transform: translateX(140%);
+  }
+}
+@media screen and (min-width: 1001px) {
+  .menu__box:hover > .box__anim {
+    transform: translateX(140%);
+  }
 }
 .menu__box:hover > .box__anim > .box__anim__logo--valide {
   transform: rotate(360deg);
@@ -567,6 +552,11 @@ body {
   padding-top: 2%;
   padding-bottom: 2%;
 }
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .menu__box .menu--nom--accom {
+    width: 70%;
+  }
+}
 .menu__box .menu--nom--accom .accom {
   font-size: 14px;
   text-overflow: ellipsis;
@@ -576,6 +566,36 @@ body {
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .menu__box .menu--nom--accom .accom {
     font-size: 17px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) and (min-width: 530px) {
+  .menu__box .menu--nom--accom .accom {
+    font-size: 19px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) and (min-width: 584px) {
+  .menu__box .menu--nom--accom .accom {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) and (min-width: 614px) {
+  .menu__box .menu--nom--accom .accom {
+    font-size: 21.4px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) and (min-width: 654px) {
+  .menu__box .menu--nom--accom .accom {
+    font-size: 22.9px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) and (min-width: 730px) {
+  .menu__box .menu--nom--accom .accom {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) and (min-width: 768px) {
+  .menu__box .menu--nom--accom .accom {
+    font-size: 26.7px;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1000px) {
@@ -599,6 +619,36 @@ body {
     font-size: 20px;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 768px) and (min-width: 530px) {
+  .menu__box .menu--nom--accom .nom {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) and (min-width: 584px) {
+  .menu__box .menu--nom--accom .nom {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) and (min-width: 614px) {
+  .menu__box .menu--nom--accom .nom {
+    font-size: 25.7px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) and (min-width: 654px) {
+  .menu__box .menu--nom--accom .nom {
+    font-size: 27.8px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) and (min-width: 730px) {
+  .menu__box .menu--nom--accom .nom {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) and (min-width: 768px) {
+  .menu__box .menu--nom--accom .nom {
+    font-size: 32px;
+  }
+}
 @media screen and (min-width: 769px) and (max-width: 1000px) {
   .menu__box .menu--nom--accom .nom {
     font-size: 25px;
@@ -618,22 +668,40 @@ body {
   margin-right: 3%;
   width: 5%;
   text-align: end;
-  transform: translateX(119px);
+  transform: translateX(125px);
   transition: transform 400ms linear;
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .menu__box .menu--prix {
     font-size: 17px;
+    transform: translateX(369%);
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) and (min-width: 614px) {
+  .menu__box .menu--prix {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) and (min-width: 730px) {
+  .menu__box .menu--prix {
+    font-size: 19px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) and (min-width: 768px) {
+  .menu__box .menu--prix {
+    font-size: 21px;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1000px) {
   .menu__box .menu--prix {
     font-size: 19px;
+    transform: translateX(572%);
   }
 }
 @media screen and (min-width: 1001px) {
   .menu__box .menu--prix {
     font-size: 22px;
+    transform: translateX(589%);
   }
 }
 .menu__box .box__anim {
@@ -643,13 +711,28 @@ body {
   width: 15%;
   background-color: aquamarine;
   transition: transform 400ms linear;
-  transform: translateX(130px);
+  transform: translateX(129px);
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .menu__box .box__anim {
+    transform: translateX(136%);
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1000px) {
+  .menu__box .box__anim {
+    transform: translateX(186%);
+  }
+}
+@media screen and (min-width: 1001px) {
+  .menu__box .box__anim {
+    transform: translateX(187%);
+  }
 }
 .menu__box .box__anim__logo--valide {
   color: aquamarine;
   background-color: white;
   border-radius: 1em;
-  font-size: 19px;
+  font-size: 4vw;
   margin-left: 33%;
   transition: transform 400ms ease-in-out;
   transform: rotate(0deg);

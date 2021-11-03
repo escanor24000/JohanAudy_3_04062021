@@ -2,85 +2,52 @@
 .menu__entree{
     display: flex;
     flex-direction: column;
-    .menu--titre{
+    .menu--titre--texte{
+        margin-left: 5%;
+        font-size: 3.4vw;
+        margin-top: 3%;
+    }
+    .barre--titre{
+        display: flex;
         font-weight: inherit;
-        font-size: 17px;
-        margin-left: 3%;
         border-bottom: 3px solid $couleur-tertiaire;
-        width: 5%;
-        height: 14%;
+        width: 8.7vw;
         margin-bottom: 3%;
-        @media screen and (min-width: 481px) and (max-width: 768px){
-           font-size: 20px;
-           width: 52px;
-           height: 48px;
-        }
-        @media screen and (min-width: 769px) and (max-width: 1000px){
-            font-size: 23px;
-            width: 52px;
-            height: 53px;
-        }
-        @media screen and (min-width: 1001px){
-            font-size: 24px;
-            width: 52px;
-            height: 56px;
-        }
+        margin-top: 1%;
     }
 }
 .menu__plat{
     display: flex;
     flex-direction: column;
-    .menu--titre{
+    .menu--titre--texte{
+        margin-left: 5%;
+        font-size: 3.4vw;
+        margin-top: 3%;
+    }
+    .barre--titre{
+        display: flex;
         font-weight: inherit;
-        font-size: 17px;
-        margin-left: 3%;
         border-bottom: 3px solid $couleur-tertiaire;
-        width: 5%;
-        height: 14%;
+        width: 8.7vw;
         margin-bottom: 3%;
-        @media screen and (min-width: 481px) and (max-width: 768px){
-            font-size: 20px;
-            width: 52px;
-            height: 48px;
-        }
-        @media screen and (min-width: 769px) and (max-width: 1000px){
-            font-size: 23px;
-            width: 42px;
-            height: 53px;
-        }
-        @media screen and (min-width: 1001px){
-            font-size: 24px;
-            width: 42px;
-            height: 56px;
-        }
+        margin-top: 1%;
     }
 }
 .menu__dessert{
     display: flex;
     flex-direction: column;
-    .menu--titre{
+    .menu--titre--texte{
+        margin-left: 5%;
+        font-size: 3.4vw;
+        margin-top: 3%;
+    }
+    .barre--titre{
+        display: flex;
         font-weight: inherit;
-        font-size: 17px;
-        margin-left: 3%;
         border-bottom: 3px solid $couleur-tertiaire;
-        width: 5%;
-        height: 14%;
+        width: 8.7vw; 
         margin-bottom: 3%;
-        @media screen and (min-width: 481px) and (max-width: 768px){
-            font-size: 20px;
-            width: 52px;
-            height: 48px;
-        }
-        @media screen and (min-width: 769px) and (max-width: 1000px){
-            font-size: 23px;
-            width: 52px;
-            height: 53px;
-        }
-        @media screen and (min-width: 1001px){
-            font-size: 24px;
-            width: 52px;
-            height: 56px;
-        }
+        margin-top: 1%;
     }
 }
                

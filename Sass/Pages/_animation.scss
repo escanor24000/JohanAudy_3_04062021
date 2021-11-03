@@ -95,12 +95,33 @@ $anim-delay: $anim-dur/$num-pla;
     &:hover{
         &>.menu--nom--accom{
             width: 54%;
+            @media screen and (min-width: 481px) and (max-width: 768px){
+                width: 63%;
+            }
         }
         &>.menu--prix{
-            transform: translateX(98px);
+            transform: translateX(96px);
+            @media screen and (min-width: 481px) and (max-width: 768px){
+                transform: translateX(250%);
+            }
+            @media screen and (min-width: 769px) and (max-width: 1000px){
+                transform: translateX(466%);
+            }
+            @media screen and (min-width: 1001px){
+                transform: translateX(472%);
+            }
         }
         &>.box__anim{
             transform: translateX(95px);
+            @media screen and (min-width: 481px) and (max-width: 768px){
+                transform: translateX(81%);
+            }
+            @media screen and (min-width: 769px) and (max-width: 1000px){
+                transform: translateX(140%);
+            }
+            @media screen and (min-width: 1001px){
+                transform: translateX(140%);
+            }
             &>.box__anim__logo--valide{
                 transform: rotate(360deg);
             }

@@ -94,6 +94,9 @@ body{
         width: 62%;
         padding-top: 2%;
         padding-bottom: 2%;
+        @media screen and (min-width: 481px) and (max-width: 768px){
+            width: 70%;
+        }
         .accom{
             font-size: 14px;
             text-overflow: ellipsis;
@@ -101,6 +104,24 @@ body{
             white-space: nowrap;
             @media screen and (min-width: 481px) and (max-width: 768px){
                 font-size: 17px;
+                @media screen and (min-width: 530px){
+                    font-size: 19px;
+                }
+                @media screen and (min-width: 584px){
+                    font-size: 20px;
+                }
+                @media screen and (min-width: 614px){
+                    font-size: 21.4px;
+                }
+                @media screen and (min-width: 654px){
+                    font-size: 22.9px;
+                }
+                @media screen and (min-width: 730px){
+                    font-size: 25px;
+                }
+                @media screen and (min-width: 768px){
+                    font-size: 26.7px;
+                }
             }
             @media screen and (min-width: 769px) and (max-width: 1000px){
                 font-size: 22px;
@@ -116,6 +137,24 @@ body{
             white-space: nowrap;
             @media screen and (min-width: 481px) and (max-width: 768px){
                 font-size: 20px;
+                @media screen and (min-width: 530px){
+                    font-size: 22px;
+                }
+                @media screen and (min-width: 584px){
+                    font-size: 24px;
+                }
+                @media screen and (min-width: 614px){
+                    font-size: 25.7px;
+                }
+                @media screen and (min-width: 654px){
+                    font-size: 27.8px;
+                }
+                @media screen and (min-width: 730px){
+                    font-size: 30px;
+                }
+                @media screen and (min-width: 768px){
+                    font-size: 32px;
+                }
             }
             @media screen and (min-width: 769px) and (max-width: 1000px){
                 font-size: 25px;
@@ -134,16 +173,28 @@ body{
         margin-right: 3%;
         width: 5%;
         text-align: end;
-        transform: translateX(119px);
+        transform: translateX(125px);
         transition: transform 400ms linear;
         @media screen and (min-width: 481px) and (max-width: 768px){
             font-size: 17px;
+            transform: translateX(369%);
+            @media screen and (min-width: 614px){
+                font-size: 18px;
+            }
+            @media screen and (min-width: 730px){
+                font-size: 19px;
+            }
+            @media screen and (min-width: 768px){
+                font-size: 21px;
+            }
         }
         @media screen and (min-width: 769px) and (max-width: 1000px){
             font-size: 19px;
+            transform: translateX(572%);
         }
         @media screen and (min-width: 1001px){
             font-size: 22px;
+            transform: translateX(589%);
         }
     }
     .box__anim
@@ -151,16 +202,24 @@ body{
         display: flex;
         border-radius: 0 1em 1em 0;
         align-items: center;
-        height: 56px;
         width: 15%;
         background-color: aquamarine;
         transition: transform 400ms linear;
-        transform: translateX(130px);
+        transform: translateX(129px);
+        @media screen and (min-width: 481px) and (max-width: 768px){
+            transform: translateX(136%);
+        }
+        @media screen and (min-width: 769px) and (max-width: 1000px){
+            transform: translateX(186%);
+        }
+        @media screen and (min-width: 1001px){
+            transform: translateX(187%);
+        }  
         &__logo--valide{
             color: aquamarine;
             background-color: white;
             border-radius: 1em;
-            font-size: 19px;
+            font-size: 4vw;
             margin-left: 33%;
             transition: transform 400ms ease-in-out;
             transform: rotate(0deg);
