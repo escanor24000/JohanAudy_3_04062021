@@ -509,13 +509,10 @@ body {
   margin-top: 8%;
   margin-right: 25%;
   margin-bottom: 22%;
-  /*box-shadow: 0px 4px 8px -4px grey;*/
   box-shadow: 0px 6px 8px #918f8f;
   text-shadow: 1px 1px 10px #918f8f;
   font-size: 16px;
-  filter: saturate(3.5);
-  background: linear-gradient(360deg, #FF79DA, #9356DC);
-  /*@include color-bouton($couleur-primaire);*/
+  background: linear-gradient(360deg, #9356DC, #FF79DA);
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .menu input {
